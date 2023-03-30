@@ -292,7 +292,7 @@ int	ofxUDPManager::Send(const char* pBuff,	const int iSize)
 	}
 
 	int ret = sendto(m_hSocket, (char*)pBuff,	iSize, 0, (sockaddr *)&saClient, sizeof(sockaddr));
-	if(ret==-1) ofxNetworkCheckError();
+	//if(ret==-1) ofxNetworkCheckError();
 	return ret;
 	//	return(send(m_hSocket, pBuff, iSize, 0));
 }
